@@ -24,7 +24,7 @@ This module is compatible with Android 8.0+ (All custom ROM's, not with stock).
 Huge thanks to everyone who helped to make this module possible !
 
 ## Special Thanks
-[***Zackptg5***](https://github.com/Zackptg5) and [***topjohnwu***](https://github.com/topjohnwu) for the template.
+[***topjohnwu***](https://github.com/topjohnwu) for [magisk](https://github.com/topjohnwu/Magisk) and official [template](https://github.com/topjohnwu/magisk-module-installer).
 
 ## Changelogs
 ### 1.0
