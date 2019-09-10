@@ -15,11 +15,11 @@ This module is compatible with Android 8.0+ (All custom ROM's, not with stock).
 4. Enables fingerprint shutter for all cams (FP sensors supported - goodix and FPC)
 
 ## Who did what ?
-- [**SerJo87**](https://forum.xda-developers.com/member.php?u=5074663) modified the libs that enables 60fps recording.
+- [**SerJo87**](https://forum.xda-developers.com/member.php?u=5074663) modified the the initial libs that enables 60fps recording. (Currently not using the libs)
 - [**Kuro Shi**](https://t.me/Kuro_Shi_Sama) modified the libs that fix green tint.
 - [**Ayush**](https://t.me/AyushR1) modified libs for lag fix.
 - [**Amogha**](https://t.me/amog787) modified FP keylayout files for goodix/fpc.
-- [**Abhishek**](https://t.me/BoogeyWoogey69) created the magisk module.
+- [**Abhishek**](https://t.me/BoogeyWoogey69) created the magisk module. Further modified the libs regarding 60 fps.
 
 Huge thanks to everyone who helped to make this module possible !
 
@@ -29,3 +29,8 @@ Huge thanks to everyone who helped to make this module possible !
 ## Changelogs
 ### 1.0
 - Initial Release
+
+### 1.1
+- Reverted primary camera vendor blobs back to stock MIUI. This enables stock video recording on snapcam and also works with GCam 6.X (Currently Tested).
+- Added device check for kenzo and kate.
+- Changes to media_profiles.xml

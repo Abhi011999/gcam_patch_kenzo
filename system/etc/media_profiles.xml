@@ -333,64 +333,66 @@
              channels="2" />
     </EncoderProfile>
 
-        <!-- CAMCORDER_QUALITY_HIGH_SPEED_LOW/720P : 720p@120fps; 42.0 Mbps -->
-        <EncoderProfile quality="highspeedlow" fileFormat="mp4" duration="60">
-            <Video codec="h264"
-                   bitRate="42000000"
-                   width="1280"
-                   height="720"
-                   frameRate="120" />
-            <!-- audio setting is ignored -->
-            <Audio codec="aac"
-                   bitRate="320000"
-                   sampleRate="48000"
-                   channels="1" />
-        </EncoderProfile>
+    <!-- CAMCORDER_QUALITY_HIGH_SPEED_LOW/720P : 720p@90fps; 64.0 Mbps -->
+    <EncoderProfile quality="highspeedlow" fileFormat="mp4" duration="60">
+      <Video codec="h264"
+             bitRate="64000000"
+             width="1280"
+             height="720"
+             frameRate="90" />
+      <!-- audio setting is ignored -->
+      <Audio codec="aac"
+             bitRate="320000"
+             sampleRate="48000"
+             channels="1" />
+    </EncoderProfile>
 
-        <!-- CAMCORDER_QUALITY_HIGH_SPEED_HIGH/1080P : 1080p@60fps; 42.0 Mbps -->
-        <EncoderProfile quality="highspeedhigh" fileFormat="mp4" duration="60">
-            <Video codec="h264"
-                   bitRate="42000000"
-                   width="1920"
-                   height="1080"
-                   frameRate="60" />
-            <!-- audio setting is ignored -->
-            <Audio codec="aac"
-                   bitRate="320000"
-                   sampleRate="48000"
-                   channels="1" />
-        </EncoderProfile>
+    <!-- CAMCORDER_QUALITY_HIGH_SPEED_HIGH/1080P : 1080p@120fps; 64.0 Mbps -->
+    <EncoderProfile quality="highspeedhigh" fileFormat="mp4" duration="60">
+      <Video codec="h264"
+             bitRate="64000000"
+             width="1920"
+             height="1080"
+             frameRate="120" />
+      <!-- audio setting is ignored -->
+      <Audio codec="aac"
+             bitRate="320000"
+             sampleRate="48000"
+             channels="1" />
+    </EncoderProfile>
+	
+    <!-- CAMCORDER_QUALITY_HIGH_SPEED_720/720P : 720@120fps; 64.0 Mbps -->
+    <EncoderProfile quality="highspeed720p" fileFormat="mp4" duration="60">
+      <Video codec="h264"
+             bitRate="64000000"
+             width="1280"
+             height="720"
+             frameRate="120" />
+      <!-- audio setting is ignored -->
+      <Audio codec="aac"
+             bitRate="320000"
+             sampleRate="48000"
+             channels="1" />
+    </EncoderProfile>
+	
+   <!-- CAMCORDER_QUALITY_HIGH_SPEED_1080/1080P : 1080p@90fps; 64.0 Mbps -->
+   <EncoderProfile quality="highspeed1080p" fileFormat="mp4" duration="60">
+      <Video codec="h264"
+             bitRate="64000000"
+             width="1920"
+             height="1080"
+             frameRate="90" />
+      <!-- audio setting is ignored -->
+      <Audio codec="aac"
+             bitRate="320000"
+             sampleRate="48000"
+             channels="1" />
+    </EncoderProfile>
 
-        <EncoderProfile quality="highspeed720p" fileFormat="mp4" duration="60">
-            <Video codec="h264"
-                   bitRate="42000000"
-                   width="1280"
-                   height="720"
-                   frameRate="120" />
-            <!-- audio setting is ignored -->
-            <Audio codec="aac"
-                   bitRate="320000"
-                   sampleRate="48000"
-                   channels="1" />
-        </EncoderProfile>
-
-        <EncoderProfile quality="highspeed1080p" fileFormat="mp4" duration="60">
-            <Video codec="h264"
-                   bitRate="42000000"
-                   width="1920"
-                   height="1080"
-                   frameRate="60" />
-            <!-- audio setting is ignored -->
-            <Audio codec="aac"
-                   bitRate="320000"
-                   sampleRate="48000"
-                   channels="1" />
-        </EncoderProfile>
-
-        <ImageEncoding quality="100" />
-        <ImageEncoding quality="100" />
-        <ImageEncoding quality="100" />
-        <ImageDecoding memCap="30000000" />
+    <ImageEncoding quality="100" />
+    <ImageEncoding quality="100" />
+    <ImageEncoding quality="100" />
+    <ImageDecoding memCap="30000000" />
 
     </CamcorderProfiles>
     <!-- Front Camera -->
@@ -647,27 +649,27 @@
         minFrameHeight="144" maxFrameHeight="2160"
         minFrameRate="15" maxFrameRate="60"
         maxHFRFrameWidth="1920" maxHFRFrameHeight="1080"
-        maxHFRMode="60"  />
+        maxHFRMode="120"  />
 
     <VideoEncoderCap name="h263" enabled="true"
         minBitRate="64000" maxBitRate="100000000"
         minFrameWidth="176" maxFrameWidth="800"
         minFrameHeight="144" maxFrameHeight="480"
         minFrameRate="15" maxFrameRate="60"
-        maxHFRFrameWidth="0" maxHFRFrameHeight="0"
-        maxHFRMode="0"  />
+        maxHFRFrameWidth="1920" maxHFRFrameHeight="1080"
+        maxHFRMode="120"  />
 
     <VideoEncoderCap name="m4v" enabled="true"
         minBitRate="64000" maxBitRate="100000000"
         minFrameWidth="176" maxFrameWidth="1920"
-        minFrameHeight="144" maxFrameHeight="1088"
+        minFrameHeight="144" maxFrameHeight="1080"
         minFrameRate="15" maxFrameRate="60"
-        maxHFRFrameWidth="0" maxHFRFrameHeight="0"
-        maxHFRMode="0"  />
+        maxHFRFrameWidth="1920" maxHFRFrameHeight="1080"
+        maxHFRMode="120"  />
 
     <VideoEncoderCap name="hevc" enabled="true"
         minBitRate="64000" maxBitRate="100000000"
-        minFrameWidth="176" maxFrameWidth="4096"
+        minFrameWidth="176" maxFrameWidth="3840"
         minFrameHeight="144" maxFrameHeight="2160"
         minFrameRate="15" maxFrameRate="60"
         maxHFRFrameWidth="1920" maxHFRFrameHeight="1080"
@@ -719,9 +721,9 @@
         For this platform, it allows maximum 30MB(3MB per 1080p frame x 10
         frames) memory.
     -->
-    <VideoEditorCap  maxInputFrameWidth="1280"
-        maxInputFrameHeight="720" maxOutputFrameWidth="1280"
-        maxOutputFrameHeight="720" maxPrefetchYUVFrames="10"/>
+    <VideoEditorCap  maxInputFrameWidth="1920"
+        maxInputFrameHeight="1080" maxOutputFrameWidth="1920"
+        maxOutputFrameHeight="1080" maxPrefetchYUVFrames="10"/>
     <!--
         The VideoEditor Export codec profile and level values
         correspond to the values in OMX_Video.h.
