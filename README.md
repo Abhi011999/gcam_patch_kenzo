@@ -1,3 +1,6 @@
+# Moved to official magisk modules repo -
+Visit here - https://github.com/Magisk-Modules-Repo/gcam_module_kenzo
+
 # Google Camera Patch for kenzo/kate
 This module fixes some issues currently encountered on Redmi Note 3 and Redmi Note 3 Pro when using modified Google Camera Version 5.x and 6.x by replacing original cam libraries with modified one's.
 It also enables some features not present in the system of custom ROMs.
